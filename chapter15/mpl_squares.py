@@ -9,6 +9,7 @@ plt.title("Square Numbers", fontsize=24)
 plt.xlabel("Value", fontsize=14)
 plt.ylabel("Square of Value", fontsize=14)
 
+
 # Set size of thick labels.
 plt.tick_params(axis='both', labelsize=14)
 
