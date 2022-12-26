@@ -7,7 +7,7 @@ plt.scatter(x_values5000, y_values5000, c=y_values5000, cmap=plt.cm.Reds, edgeco
 plt.title('Cube Numbers', fontsize=24)
 plt.xlabel("Value", fontsize=14)
 plt.ylabel("Cube of Value", fontsize=14)
-plt.axis([0, 5001, 0, 5100**3])
+plt.axis([0, 5100, 0, 5100**3])
 plt.tick_params(axis='both', which='major', labelsize=14)
 
 plt.show()

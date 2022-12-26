@@ -24,3 +24,5 @@ plt.tick_params(axis='both', which='major', labelsize=14)
 
 #Saving the plot. 
 plt.savefig('squares_plot.png', bbox_inches='tight')
+plt.show()
+
