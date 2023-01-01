@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from random_walk import RandomWalk
+from random_walk_final import RandomWalk
 
 while True:
 
@@ -10,6 +10,7 @@ while True:
     # Set the size of the plotting window.
     plt.figure(figsize=(12, 6))
 
+    # Generating a number of points and passing them to the plot.
     point_numbers = list(range(rw.num_points))  # Refresher, range is a function that returns a sequence of numbers.
     plt.plot(rw.x_values, rw.y_values, linewidth='1')
 

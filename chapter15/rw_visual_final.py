@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from random_walk import RandomWalk
+from random_walk_final import RandomWalk
 
 while True:
 
