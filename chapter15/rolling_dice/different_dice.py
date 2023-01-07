@@ -21,6 +21,12 @@ for value in range(Die.instance_counter.total(), max_result+1):  # range() does 
 
 # visualize the results.
 hist = pygal.Bar()
-for side in Die
 hist.title = "Results of rolling a D6 and a D10 50,000 times"
-hist.x_labels = hist.x_labels = [str(x) for x in range(Die.instance_counter.total(), die_1.num_sides]
+hist.x_labels = hist.x_labels = \
+    [str(x) for x in range(Die.instance_counter.total(), (die_1.num_sides+die_2.num_sides)+1)]
+hist.x_title = "Result"
+hist.y_title = "Frequency of Results"
+
+hist.add('D6 + D10', frequencies)
+hist.render_to_file('dice_visual10-6.svg')
+
