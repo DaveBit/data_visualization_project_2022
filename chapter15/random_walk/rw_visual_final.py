@@ -21,6 +21,7 @@ while True:
     plt.gca().get_xaxis().set_visible(False)
     plt.gca().get_yaxis().set_visible(False)
 
+    plt.savefig('rw_visual_final.png', bbox_inches='tight')
     plt.show()
 
     keep_running = input("Make another walk? (y/n): ")
