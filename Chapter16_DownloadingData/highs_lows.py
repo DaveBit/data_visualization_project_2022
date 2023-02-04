@@ -1,5 +1,7 @@
 import csv
 from matplotlib import pyplot as plt
+from datetime import datetime
+
 
 #  First part consist of getting the file and extracting the data.
 
@@ -10,7 +12,7 @@ with open(filename) as f:  # we open the file and store the file object in F
     # And we retrieve the first line. Returns a list.
 
     highs = []
-    for row in reader:  # The reader stood in the second line, the first 1 was already read in line 6.
+    for row in reader:  # The reader stood in the second line, the first one was already read in line 6.
         high = int(row[1])
         highs.append(high)  # row[1] returns the max temperature parameter of each row.
 
@@ -27,7 +29,7 @@ plt.title("Daily high temperatures, July 2014", fontsize=24)
 plt.xlabel('', fontsize=16)
 plt.ylabel("Temperature (F)", fontsize=16)
 plt.tick_params(axis='both', which='major', labelsize=16)
-plt.xlim(0, 30)
+plt.xlim(0)
 plt.show()
 """
 for index, column_header in enumerate(header_row):  # enumerate() gives you the index and the value.
